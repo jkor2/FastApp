@@ -1,4 +1,13 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
 
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 .App-header {
   background-color: #2b3035;
   min-height: 100vh;
@@ -10,4 +19,14 @@
   padding-bottom: 0;
   margin-top: 0;
   margin-bottom: 0;
+}
+.holder-home{
+  overflow: hidden;
+
+}
+.btn-hold-home{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
