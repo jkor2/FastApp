@@ -16,8 +16,8 @@ function NavBar() {
         
 
         <div className='hold-login-home'>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-dark text-white"/>
-        
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-dark text-white mr-5"/>
+
         { /** Will be user icon when signed in, else, login button will be posted*/}
         {signedInData ? "Signed In" : <Button variant="outline-light" href="/login">Login</Button>}
         

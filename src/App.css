@@ -38,6 +38,5 @@
 }
 .hold-login-home{
   display: flex;
-  width: 8vw;
-  justify-content: space-between;
+  gap: 2vw;
 }
