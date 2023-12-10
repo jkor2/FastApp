@@ -1,9 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import Button from "react-bootstrap/Button"
 import "bootstrap/dist/css/bootstrap.min.css"
-import NavBar from './components/navbar';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
 import HomePage from './components/home';
 import Articles from './components/articles';
 import Community from './components/community';
