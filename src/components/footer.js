@@ -14,13 +14,9 @@ function Footer() {
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text className='text-light'>
             Signed in as: {" "} 
-            
             <a href="/login" className='text-secondary'>
                 {signedInData ? "Name" : "Guest"}
                 </a>
-
-            
-
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>
