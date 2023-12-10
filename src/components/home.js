@@ -11,21 +11,43 @@ function HomePage() {
       <NavBar />
       <div className="holder-home">
         <Container className="mt-4 ">
-          <Alert variant="info" className="mb-5">
-            <Alert.Heading>Hey, nice to see you!</Alert.Heading>
-            <p className="fs-5">
-              🌟 Welcome to FullyFasted – Your Gateway to Holistic Well-Being!
-              🌟 <br />
-              At FullyFasted, we believe in the power of mindful fasting as a
-              cornerstone of a balanced and thriving lifestyle. Our platform is
-              crafted to provide you with the tools, community support, and
-              knowledge needed to make your fasting experience not just
-              effective but enjoyable. <br />
-              <hr />
-              Let's make wellness a way of life! 🌿 <br />
-            </p>
-          </Alert>
-          <Card className="bg-dark text-light mb-5">
+
+        <Row className="mb-4">
+                <Col lg={6} md={12}>
+                  <Card className="h-100 mt-2 bg-dark text-light">
+                    <Card.Header as="h5">Hey, nice to see you!</Card.Header>
+                    <Card.Body>
+                      <Card.Text>
+                      <p className="fs-5">
+                        🌟 Welcome to FullyFasted – Your Gateway to Holistic Well-Being!
+                        <br />
+                        At FullyFasted, we believe in the power of mindful fasting as a
+                        cornerstone of a balanced and thriving lifestyle. Our platform is
+                        crafted to provide you with the tools, community support, and
+                        knowledge needed to make your fasting experience not just
+                        effective but enjoyable. <br />
+                        <hr />
+                        Let's make wellness a way of life! 🌿 <br />
+                        </p>
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col lg={6} md={12} >
+                  <Card className="h-100 mt-2 text-light" style={{ background: 'transparent', border: 'none', display: "flex", alignItems:'center'}}>
+                    <Card.Body style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems:"center"}}>
+                      <Card.Title className="fs-2">Get Started Today!</Card.Title>
+                      <Card.Text className="text-center w-50 fs-5">
+                        Join our community and embark on a journey to a healthier you. Sign up now and unlock exclusive features and resources!
+                      </Card.Text>
+                      <Button variant="primary" className="btn-outline-sark w-50">
+                        Sign Up
+                      </Button>
+                    </Card.Body>
+                  </Card>
+                </Col>
+        </Row>
+          <Card className="bg-dark text-light mt-5 mb-5 w-100">
             <Card.Header>Quote of the Day</Card.Header>
             <Card.Body>
               <blockquote className="blockquote mb-0">
