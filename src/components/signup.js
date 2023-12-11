@@ -41,7 +41,7 @@ function Signup() {
         <Container className="bg-dark w-25 d-flex justify-content-center align-items-center ">
           <h1>FullyFasted</h1>
         </Container>
-        <Container className="bg-dark w-50 mb-5 d-flex justify-content-center align-items-center text-center ">
+        <Container className="bg-dark w-50 mb-2 d-flex justify-content-center align-items-center text-center ">
           <h5>Learn. Track. Share.</h5>
         </Container>
 
@@ -151,7 +151,7 @@ function Signup() {
           </Button>
         </Form>
 
-        <Container className="bg-dark w-100 mt-5 d-flex justify-content-center align-items-center ">
+        <Container className="bg-dark w-100 mt-2 d-flex justify-content-center align-items-center ">
           <h6>Have an account? <a href="/login">Sign in</a></h6>
         </Container>
       </Container>

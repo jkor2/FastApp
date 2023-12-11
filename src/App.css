@@ -1,3 +1,5 @@
+
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .example::-webkit-scrollbar {
   display: none;
@@ -51,4 +53,8 @@
 }
 .singup-hold{
   height: 100vh;
+}
+.holder-home{
+  background-color: #303942;
+
 }
