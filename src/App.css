@@ -9,7 +9,7 @@
   scrollbar-width: none;  /* Firefox */
 }
 .App-header {
-  background-color: #2b3035;
+  background-color: #303942;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -40,4 +40,15 @@
 .hold-login-home{
   display: flex;
   gap: 2vw;
+}
+
+.bg-nav{
+  background: #23313f;
+}
+
+.bg-card-color{
+  background: #34495e ;
+}
+.singup-hold{
+  height: 100vh;
 }

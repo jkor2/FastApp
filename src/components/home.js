@@ -40,7 +40,7 @@ function HomePage() {
                       <Card.Text className="text-center w-50 fs-5">
                         Join our community and embark on a journey to a healthier you. Sign up now and unlock exclusive features and resources!
                       </Card.Text>
-                      <Button variant="primary" className="btn-outline-sark w-50">
+                      <Button variant="primary" className="btn-outline-sark w-50" href="/signup">
                         Sign Up
                       </Button>
                     </Card.Body>
@@ -48,7 +48,7 @@ function HomePage() {
                 </Col>
         </Row>
           <Card className="bg-dark text-light mt-5 mb-5 w-100">
-            <Card.Header>Quote of the Day</Card.Header>
+            <Card.Header className="w-50">Quote of the Day</Card.Header>
             <Card.Body>
               <blockquote className="blockquote mb-0">
                 <p>

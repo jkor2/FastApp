@@ -12,7 +12,7 @@ import TipsAndTricks from './components/tipsandtricks';
 import TweleveHour from './components/twelevehour';
 import TwentyFour from './components/twentyfour';
 import WaterFast from './components/waterfast';
-
+import Signup from './components/signup';
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
           <Route path="/resources/twelevehour" element={<TweleveHour />}/>
           <Route path="/resources/twentyfourhour" element={<TwentyFour />}/>
           <Route path="/resources/waterfast" element={<WaterFast />}/>
-
+          <Route path="/signup" element={<Signup />}/>        
         </Routes>  
       </header>
     </div>
