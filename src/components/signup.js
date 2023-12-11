@@ -15,8 +15,10 @@ function Signup() {
     confirmpassword: "",
     height: "",
     weight: "",
+    gender:""
   });
 
+  console.log(userData)
   const handleChange = (event) => {
     const { id, value } = event.target;
     setUserData((prevData) => ({
@@ -39,11 +41,11 @@ function Signup() {
         <Container className="bg-dark w-25 d-flex justify-content-center align-items-center ">
           <h1>FullyFasted</h1>
         </Container>
-        <Container className="bg-dark w-50 mb-3 d-flex justify-content-center align-items-center text-center ">
-          <h5>Get Started Here!</h5>
+        <Container className="bg-dark w-50 mb-5 d-flex justify-content-center align-items-center text-center ">
+          <h5>Learn. Track. Share.</h5>
         </Container>
 
-        <Form action="/signup" method="post" onSubmit={handleSubmit}>
+        <Form action="/signup" method="post" onSubmit={handleSubmit} className="mb-3">
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridEmail">
               <Form.Label>First Name</Form.Label>
@@ -51,6 +53,7 @@ function Signup() {
                 id="fname"
                 type="text"
                 placeholder="Enter First Name"
+                onChange={handleChange}
               />
             </Form.Group>
 
@@ -131,10 +134,26 @@ function Signup() {
             </Form.Group>
           </Row>
 
+          <Row className="mb-3">
+            <Form.Group as={Col} controlId="formGridGender">
+              <Form.Label>Gender</Form.Label>
+              <Form.Select aria-label="Select your Gender" id="gender" onChange={handleChange}>
+                <option>Select your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="nonbinary">Non-Binary</option>
+                <option value="other">Other</option>
+              </Form.Select>
+            </Form.Group>
+          </Row>
           <Button variant="primary" type="submit" className="w-100 mt-4">
             Submit
           </Button>
         </Form>
+
+        <Container className="bg-dark w-100 mt-5 d-flex justify-content-center align-items-center ">
+          <h6>Have an account? <a href="/login">Sign in</a></h6>
+        </Container>
       </Container>
     </div>
   );
