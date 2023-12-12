@@ -5,6 +5,7 @@ import React from 'react';
 function Footer() {
     const [signedInData, setSignedInData] = React.useState(false)
 
+// Need to properly form footer section with proper content
 
   return (
     <Navbar className="bg-dark" style={{ minHeight: '10vh' }}>
